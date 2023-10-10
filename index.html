@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Add a third party vector tile source</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+<style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoibWFzYWlzaGkiLCJhIjoiY2xtNnF6a3BoM2J1dDN2bzk2cTQ5eWgxdCJ9.z9M7KbxjZMZnXfQ1wsdh3Q';
+	const map = new mapboxgl.Map({
+		container: 'map',
+		// Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+		style: 'mapbox://styles/mapbox/light-v11',
+		zoom: 11,
+		center: [-73.9768765, 40.717768]
+	});
+
+	map.on('load', () => {
+		// Add a new vector tile source with ID 'mapillary'.
+		map.addSource('newyork_buses', {
+			'type': 'vector',
+			'tiles': [
+				'https://masaishi.github.io/new-york-bus-data-viewer/data/{z}/{x}/{y}.pbf'
+			],
+			'minzoom': 0,
+			'maxzoom': 20,
+		});
+		map.addLayer({
+			'id': 'newyork_buses',
+			'type': 'circle',
+			'source': 'newyork_buses',
+			'source-layer': 'map',
+			'paint': {
+				'circle-radius': 4,
+				'circle-color': '#66ff66',
+				'circle-opacity': 0.7,
+				'circle-stroke-color': '#99ff99',
+				'circle-stroke-width': 1,
+			}
+		}, 'road-label-simple');
+	});
+	map.addControl(new mapboxgl.NavigationControl());
+</script>
+
+</body>
+</html>
