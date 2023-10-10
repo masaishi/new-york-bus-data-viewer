@@ -8,7 +8,7 @@ This project transforms the [New York City Bus Data](https://www.kaggle.com/ston
 
 ## Implementation
 
-The implementation was primarily executed on Kaggle, owing to its easy access to databases and robust computational resources. You can delve deeper into the technical aspects and code base in the provided Kaggle notebook and dataset:
+The implementation was primarily executed on Kaggle, owing to its easy access to databases and robust computational resources.
 
 - [Kaggle Notebook](https://www.kaggle.com/code/masaishi/convert-newyork-bus-data-to-vecter-tile/notebook)
 - [Kaggle Dataset](https://www.kaggle.com/datasets/masaishi/newyorkbusesvectertile/data)
