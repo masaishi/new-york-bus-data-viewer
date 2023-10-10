@@ -1,6 +1,6 @@
 # New York City Bus Data Viewer
 
-Explore the interactive visual representation of extensive bus data in New York City [here](https://masaishi.github.io/new-york-bus-data-viewer).
+### *[Viewer](https://masaishi.github.io/new-york-bus-data-viewer)*
 
 ## Overview
 
