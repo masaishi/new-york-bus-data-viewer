@@ -2,7 +2,7 @@
 
 ### *[Viewer](https://masaishi.github.io/new-york-bus-data-viewer)*
 
-![demo](https://masaishi.github.io/new-york-bus-data-viewer/demo.gif)
+![demo](/demo.gif)
 
 ## Overview
 
