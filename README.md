@@ -4,7 +4,7 @@ Explore the interactive visual representation of extensive bus data in New York 
 
 ## Overview
 
-This project transforms the comprehensive [New York City Bus Data](https://www.kaggle.com/stoney71/new-york-city-transport-statistics) into vector tiles, making it readable as a source on Mapbox. It provides an efficient and user-friendly way to visualize and navigate through the massive set of bus data, offering insights and information effectively.
+This project transforms the [New York City Bus Data](https://www.kaggle.com/stoney71/new-york-city-transport-statistics) into vector tiles, making it readable as a source on Mapbox.
 
 ## Implementation
 
