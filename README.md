@@ -4,6 +4,8 @@
 
 ![demo](/demo.gif)
 
+It demonstrates loading more detailed data as the zoom level increases.
+
 ## Overview
 
 This project transforms the [New York City Bus Data](https://www.kaggle.com/stoney71/new-york-city-transport-statistics) into vector tiles, making it readable as a source on Mapbox.
