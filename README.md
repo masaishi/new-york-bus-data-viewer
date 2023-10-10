@@ -1,6 +1,8 @@
 # New York City Bus Data Viewer
 
 ### *[Viewer](https://masaishi.github.io/new-york-bus-data-viewer)*
+![demo](https://github.com/masaishi/new-york-bus-data-viewer/assets/1396267/d88c128e-3f19-4aba-bfe1-676b9540b679)
+
 
 ## Overview
 
